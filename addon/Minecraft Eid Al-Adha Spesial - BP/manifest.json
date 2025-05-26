@@ -1,0 +1,47 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "min_engine_version": [
+            1,
+            21,
+            82
+        ],
+        "name": "pack.name",
+        "uuid": "60bbd361-cda8-45c8-9a6e-deb8b0fdcdd4",
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "pack.description",
+            "type": "data",
+            "uuid": "64bd8b08-375b-47da-901b-0818f400a3ef",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d4452881-7336-4f3b-8168-2b43ddb276b0",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "Fern Aerell"
+        ],
+        "license": "MIT",
+        "url": "https://www.youtube.com/@AerellDev"
+    }
+}
