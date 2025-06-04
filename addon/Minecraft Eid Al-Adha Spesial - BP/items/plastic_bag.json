@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:item": {
+        "description": {
+            "identifier": "mceaas:plastic_bag",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:icon": "mceaas:plastic_bag_3",
+            "minecraft:display_name": {
+                "value": "item.mceaas:plastic_bag"
+            },
+            "minecraft:should_despawn": true,
+            "minecraft:stacked_by_data": true
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "Minecraft Eid Al-Adha Special",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "mceaas:plastic_bag": {
+            "textures": "textures/items/plastic_bag/plastic_bag"
+        },
+        "mceaas:plastic_bag_2": {
+            "textures": "textures/items/plastic_bag/plastic_bag_2"
+        },
+        "mceaas:plastic_bag_3": {
+            "textures": "textures/items/plastic_bag/plastic_bag_3"
+        }
+    }
+}
