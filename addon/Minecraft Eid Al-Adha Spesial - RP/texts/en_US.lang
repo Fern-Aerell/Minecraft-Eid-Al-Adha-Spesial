@@ -3,3 +3,5 @@ pack.description=§c- Created by Fern Aerell -\n§fCelebrate Eid al-Adha with jo
 
 item.mceaas:plastic_bag=Plastic bag
 item.mceaas:plastic_bag_of_beef=Plastic bag of beef
+
+action.interact.give=Give

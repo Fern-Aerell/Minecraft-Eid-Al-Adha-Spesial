@@ -3,3 +3,5 @@ pack.description=§c- Dibuat oleh Fern Aerell -\n§fRayakan Idul Adha dengan ser
 
 item.mceaas:plastic_bag=Kantong plastik
 item.mceaas:plastic_bag_of_beef=Kantong plastik berisi daging sapi
+
+action.interact.give=Memberi
