@@ -10,6 +10,9 @@
         },
         "mceaas:plastic_bag_3": {
             "textures": "textures/items/plastic_bag/plastic_bag_3"
+        },
+        "mceaas:plastic_bag_of_beef": {
+            "textures": "textures/items/plastic_bag/plastic_bag_of_beef"
         }
     }
 }

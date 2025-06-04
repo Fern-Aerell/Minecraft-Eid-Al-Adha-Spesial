@@ -2,19 +2,22 @@
     "format_version": "1.21.30",
     "minecraft:item": {
         "description": {
-            "identifier": "mceaas:plastic_bag",
+            "identifier": "mceaas:plastic_bag_of_beef",
             "menu_category": {
                 "category": "items"
             }
         },
         "components": {
-            "minecraft:icon": "mceaas:plastic_bag_3",
+            "minecraft:icon": "mceaas:plastic_bag_of_beef",
             "minecraft:display_name": {
-                "value": "item.mceaas:plastic_bag"
+                "value": "item.mceaas:plastic_bag_of_beef"
             },
             "minecraft:should_despawn": true,
             "minecraft:stacked_by_data": true,
-            "minecraft:rarity": "common"
+            "minecraft:rarity": "common",
+            "minecraft:use_modifiers": {
+                "movement_modifier": 0.9
+            }
         }
     }
 }

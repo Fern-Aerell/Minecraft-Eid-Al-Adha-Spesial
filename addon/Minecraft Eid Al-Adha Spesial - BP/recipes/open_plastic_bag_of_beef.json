@@ -2,25 +2,29 @@
     "format_version": "1.21.50",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "mceaas:plastic_bag"
+            "identifier": "mceaas:open_plastic_bag_of_beef"
         },
         "tags": [
+            "construction_bench",
             "crafting_table"
         ],
         "pattern": [
-            "A A",
-            "AAA",
-            "AAA"
+            "P"
         ],
         "key": {
-            "A": "minecraft:baked_potato"
+            "P": {
+                "item": "mceaas:plastic_bag_of_beef"
+            }
         },
         "unlock": [
             {
-                "item": "minecraft:baked_potato"
+                "item": "mceaas:plastic_bag_of_beef"
             }
         ],
         "result": [
+            {
+                "item": "minecraft:beef"
+            },
             {
                 "item": "mceaas:plastic_bag"
             }
