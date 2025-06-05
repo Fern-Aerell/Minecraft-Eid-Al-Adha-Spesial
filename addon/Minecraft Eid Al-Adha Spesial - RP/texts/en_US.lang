@@ -5,3 +5,7 @@ item.mceaas:plastic_bag=Plastic bag
 item.mceaas:plastic_bag_of_beef=Plastic bag of beef
 
 action.interact.give=Give
+action.interact.laid_down=Laid down
+action.interact.sacrifice=Sacrifice
+action.interact.skin=Skin
+action.interact.cut=Cut

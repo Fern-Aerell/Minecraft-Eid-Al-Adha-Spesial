@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cow.v2": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default",
+            "Texture.warm",
+            "Texture.cold",
+            "Texture.default_sacrificed",
+            "Texture.warm_sacrificed",
+            "Texture.cold_sacrificed",
+            "Texture.default_skinned",
+            "Texture.warm_skinned",
+            "Texture.cold_skinned"
+          ]
+        },
+        "geometries": {
+          "Array.geos": [
+            "Geometry.default",
+            "Geometry.warm",
+            "Geometry.cold",
+            "Geometry.default",
+            "Geometry.warm",
+            "Geometry.cold",
+            "Geometry.default",
+            "Geometry.warm",
+            "Geometry.cold"
+          ]
+        }
+      },
+      "geometry": "Array.geos[v.index]",
+      "materials": [ { "*": "v.is_cold ? Material.cold : Material.default" } ],
+      "textures": [ "Array.textures[v.index]" ]
+    }
+  }
+}

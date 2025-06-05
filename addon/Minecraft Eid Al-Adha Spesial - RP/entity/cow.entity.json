@@ -1,0 +1,65 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:cow",
+            "min_engine_version": "1.8.0",
+            "materials": {
+                "default": "cow",
+                "cold": "cow_cold"
+            },
+            "textures": {
+                "default": "textures/entity/cow/cow_v2",
+                "warm": "textures/entity/cow/cow_warm",
+                "cold": "textures/entity/cow/cow_cold",
+                "default_sacrificed": "textures/entity/cow/cow_v2_sacrificed",
+                "warm_sacrificed": "textures/entity/cow/cow_warm_sacrificed",
+                "cold_sacrificed": "textures/entity/cow/cow_cold_sacrificed",
+                "default_skinned": "textures/entity/cow/cow_v2_skinned",
+                "warm_skinned": "textures/entity/cow/cow_warm_skinned",
+                "cold_skinned": "textures/entity/cow/cow_cold_skinned"
+            },
+            "geometry": {
+                "default": "geometry.cow.v2",
+                "warm": "geometry.cow.warm",
+                "cold": "geometry.cow.cold"
+            },
+            "animations": {
+                "setup": "animation.cow.setup",
+                "walk": "animation.quadruped.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.cow.baby_transform",
+                "laid_down": "animation.cow.laid_down",
+                "get_up": "animation.cow.get_up",
+                "sacrificed": "animation.cow.sacrificed"
+            },
+            "scripts": {
+                "animate": [
+                    "setup",
+                    {
+                        "walk": "query.modified_move_speed"
+                    },
+                    "look_at_target",
+                    {
+                        "baby_transform": "query.is_baby"
+                    },
+                    {
+                        "sacrificed": "query.property('mceaas:qurban_state') == 2 || query.property('mceaas:qurban_state') == 3"
+                    }
+                ],
+                "pre_animation": [
+                    "t.variant = query.property('minecraft:climate_variant');",
+                    "t.qurban_state = query.property('mceaas:qurban_state');",
+                    "v.index = (t.qurban_state == 0 || t.qurban_state == 1) ? ((t.variant == 'temperate') ? 0 : (t.variant == 'warm') ? 1 : 2) : (t.qurban_state == 2) ? ((t.variant == 'temperate') ? 3 : (t.variant == 'warm') ? 4 : 5) : (t.qurban_state == 3) ? ((t.variant == 'cold') ? 7 : (t.variant == 'temperate') ? 6 : 7) : 0;",
+                    "v.is_cold = (t.variant == 'cold' && t.qurban_state != 3);"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.cow.v2"
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg_cow"
+            }
+        }
+    }
+}

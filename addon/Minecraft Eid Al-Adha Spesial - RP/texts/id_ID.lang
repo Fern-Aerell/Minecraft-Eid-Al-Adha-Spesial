@@ -5,3 +5,7 @@ item.mceaas:plastic_bag=Kantong plastik
 item.mceaas:plastic_bag_of_beef=Kantong plastik berisi daging sapi
 
 action.interact.give=Memberi
+action.interact.laid_down=Dibaringkan
+action.interact.sacrifice=Korbankan
+action.interact.skin=Kuliti
+action.interact.cut=Potong
